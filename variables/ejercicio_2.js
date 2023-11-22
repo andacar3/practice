@@ -2,8 +2,8 @@ const button = document.querySelector('#myBtn');
 
 button.onclick = function() {
 
-    const precio = prompt("ingrese el precio");
-    const disCnt = prompt("ingrese un descuento");
+    const precio = parseFloat(prompt("ingrese el precio"));
+    const disCnt = parseFloat(prompt("ingrese un descuento"));
 
     const finalPrice =  precio - (precio * (disCnt/100));
 
